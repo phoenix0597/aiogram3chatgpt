@@ -1,0 +1,18 @@
+# config_data/loguru_config.yaml
+version: 1
+handlers:
+  - sink: "logs/main.log"
+    level: "DEBUG"
+    format: "{time:YYYY-MM-DD at HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+    rotation: "1 MB"
+    retention: "10 days"
+    compression: "zip"
+  - sink: "logs/error.log"
+    level: "ERROR"
+    format: "{time:YYYY-MM-DD at HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+    rotation: "5 MB"
+    retention: "1 month"
+    compression: "zip"
+  - sink: sys.stdout
+    level: "INFO"
+    format: "{time:YYYY-MM-DD at HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"

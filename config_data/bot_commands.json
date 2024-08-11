@@ -1,0 +1,7 @@
+[
+    {"command": "start", "description": "Запустить бота"},
+    {"command": "help", "description": "Помощь"},
+    {"command": "history", "description": "Показать историю запросов"},
+    {"command": "high", "description": "Показать запросы с наибольшей стоимостью"},
+    {"command": "low", "description": "Показать запросы с наименьшей стоимостью"}
+]
